@@ -1,0 +1,86 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "trace_replayBlockTransactions",
+#    "params": [
+#        "0x12",
+#        [
+#            "trace",
+#            "vmTrace",
+#            "stateDiff"
+#        ]
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "trace_replayBlockTransactions",
+  "params": [
+    "0x12",
+    [
+      "trace",
+      "vmTrace",
+      "stateDiff"
+    ]
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "trace_block",
+#    "params": [
+#        "0x6"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "trace_block",
+  "params": [
+    "0x6"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "trace_transaction",
+#    "params": [
+#        "0x4c253746668dca6ac3f7b9bc18248b558a95b5fc881d140872c2dff984d344a7"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "trace_transaction",
+  "params": [
+    "0x4c253746668dca6ac3f7b9bc18248b558a95b5fc881d140872c2dff984d344a7"
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+

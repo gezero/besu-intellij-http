@@ -1,0 +1,314 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_accountRange",
+#    "params": [
+#        "12345",
+#        0,
+#        "0",
+#        5
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_accountRange",
+  "params": [
+    "12345",
+    0,
+    "0",
+    5
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_batchSendRawTransaction",
+#    "params": [
+#        "0xf868808203e882520894627306090abab3a6e1400e9345bc60c78a8bef57872386f26fc10000801ba0ac74ecfa0e9b85785f042c143ead4780931234cc9a032fce99fab1f45e0d90faa02fd17e8eb433d4ca47727653232045d4f81322619c0852d3fe8ddcfcedb66a43",
+#        "0x416",
+#        "0xf868018203e882520894627306090abab3a6e1400e9345bc60c78a8bef57872386f26fc10000801ca0b24ea1bee8fe36984c36acbf80979a4509f23fc17141851e08d505c0df158aa0a00472a05903d4cd7a811bd4d5c59cc105d93f5943f3393f253e92e65fc36e7ce0",
+#        "0xf868808203e882520894627306090abab3a6e1400e9345bc60c78a8bef5787470de4df820000801ca0f7936b4de04792e3c65095cfbfd1399d231368f5f05f877588c0c8509f6c98c9a01834004dead527c8da1396eede42e1c60e41f38a77c2fd13a6e495479c729b99"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_batchSendRawTransaction",
+  "params": [
+    "0xf868808203e882520894627306090abab3a6e1400e9345bc60c78a8bef57872386f26fc10000801ba0ac74ecfa0e9b85785f042c143ead4780931234cc9a032fce99fab1f45e0d90faa02fd17e8eb433d4ca47727653232045d4f81322619c0852d3fe8ddcfcedb66a43",
+    "0x416",
+    "0xf868018203e882520894627306090abab3a6e1400e9345bc60c78a8bef57872386f26fc10000801ca0b24ea1bee8fe36984c36acbf80979a4509f23fc17141851e08d505c0df158aa0a00472a05903d4cd7a811bd4d5c59cc105d93f5943f3393f253e92e65fc36e7ce0",
+    "0xf868808203e882520894627306090abab3a6e1400e9345bc60c78a8bef5787470de4df820000801ca0f7936b4de04792e3c65095cfbfd1399d231368f5f05f877588c0c8509f6c98c9a01834004dead527c8da1396eede42e1c60e41f38a77c2fd13a6e495479c729b99"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_getBadBlocks",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_getBadBlocks",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_metrics",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_metrics",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_standardTraceBadBlockToFile",
+#    "params": [
+#        "0x53741e9e94791466d117c5f9e41a2ed1de3f73d39920c621dfc2f294e7779baa"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_standardTraceBadBlockToFile",
+  "params": [
+    "0x53741e9e94791466d117c5f9e41a2ed1de3f73d39920c621dfc2f294e7779baa"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_standardTraceBlockToFile",
+#    "params": [
+#        "0x2dc0b6c43144e314a86777b4bd4f987c0790a6a0b21560671d221ed81a23f2dc",
+#        {
+#            "txHash": "0x4ff04c4aec9517721179c8dd435f47fbbfc2ed26cd4926845ab687420d5580a6",
+#            "disableMemory": false
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_standardTraceBlockToFile",
+  "params": [
+    "0x2dc0b6c43144e314a86777b4bd4f987c0790a6a0b21560671d221ed81a23f2dc",
+    {
+      "txHash": "0x4ff04c4aec9517721179c8dd435f47fbbfc2ed26cd4926845ab687420d5580a6",
+      "disableMemory": false
+    }
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_storageRangeAt",
+#    "params": [
+#        "0x2b76b3a2fc44c0e21ea183d06c846353279a7acf12abcc6fb9d5e8fb14ae2f8c",
+#        0,
+#        "0x0e0d2c8f7794e82164f11798276a188147fbd415",
+#        "0x0000000000000000000000000000000000000000000000000000000000000000",
+#        1
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_storageRangeAt",
+  "params": [
+    "0x2b76b3a2fc44c0e21ea183d06c846353279a7acf12abcc6fb9d5e8fb14ae2f8c",
+    0,
+    "0x0e0d2c8f7794e82164f11798276a188147fbd415",
+    "0x0000000000000000000000000000000000000000000000000000000000000000",
+    1
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_traceBlock",
+#    "params": [
+#        "0xf90277f90208a05a41d0e66b4120775176c09fcf39e7c0520517a13d2b57b18d33d342df038bfca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d4934794e6a7a1d47ff21b6321162aea7c6cb457d5476bcaa00e0df2706b0a4fb8bd08c9246d472abbe850af446405d9eba1db41db18b4a169a04513310fcb9f6f616972a3b948dc5d547f280849a87ebb5af0191f98b87be598a0fe2bf2a941abf41d72637e5b91750332a30283efd40c424dc522b77e6f0ed8c4b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000860153886c1bbd82b44382520b8252088455c426598b657468706f6f6c2e6f7267a0b48c515a9dde8d346c3337ea520aa995a4738bb595495506125449c1149d6cf488ba4f8ecd18aab215f869f86780862d79883d2000825208945df9b87991262f6ba471f09758cde1c0fc1de734827a69801ca088ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0a045e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33ac0"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_traceBlock",
+  "params": [
+    "0xf90277f90208a05a41d0e66b4120775176c09fcf39e7c0520517a13d2b57b18d33d342df038bfca01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d4934794e6a7a1d47ff21b6321162aea7c6cb457d5476bcaa00e0df2706b0a4fb8bd08c9246d472abbe850af446405d9eba1db41db18b4a169a04513310fcb9f6f616972a3b948dc5d547f280849a87ebb5af0191f98b87be598a0fe2bf2a941abf41d72637e5b91750332a30283efd40c424dc522b77e6f0ed8c4b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000860153886c1bbd82b44382520b8252088455c426598b657468706f6f6c2e6f7267a0b48c515a9dde8d346c3337ea520aa995a4738bb595495506125449c1149d6cf488ba4f8ecd18aab215f869f86780862d79883d2000825208945df9b87991262f6ba471f09758cde1c0fc1de734827a69801ca088ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0a045e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33ac0"
+  ],
+  "id": 1
+}
+
+###
+
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_traceBlockByHash",
+#    "params": [
+#        "0xaceb3b2c9b25b0589230873921eb894b28722011b8df63977145517d754875a5"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_traceBlockByHash",
+  "params": [
+    "0xaceb3b2c9b25b0589230873921eb894b28722011b8df63977145517d754875a5"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_traceBlockByNumber",
+#    "params": [
+#        "0x7224",
+#        {
+#            "disableStorage": true
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_traceBlockByNumber",
+  "params": [
+    "0x7224",
+    {
+      "disableStorage": true
+    }
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "debug_traceTransaction",
+#    "params": [
+#        "0x2cc6c94c21685b7e0f8ddabf277a5ccf98db157c62619cde8baea696a74ed18e",
+#        {
+#            "disableStorage": true
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "debug_traceTransaction",
+  "params": [
+    "0x2cc6c94c21685b7e0f8ddabf277a5ccf98db157c62619cde8baea696a74ed18e",
+    {
+      "disableStorage": true
+    }
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+
+
+
+
+
+

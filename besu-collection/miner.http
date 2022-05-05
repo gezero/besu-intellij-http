@@ -1,0 +1,66 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "miner_changeTargetGasLimit",
+#    "params": [
+#        800000
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "miner_changeTargetGasLimit",
+  "params": [
+    800000
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "miner_start",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "miner_start",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "miner_stop",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "miner_stop",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+
+

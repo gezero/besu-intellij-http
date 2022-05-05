@@ -1,0 +1,170 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_addPeer",
+#    "params": [
+#        "enode://c93f69ddd83d3db3e93e5165d60b4f5d93a9731df776beee94c5f8a0c770e41bdea69094136402db0cef7af63f0aa636ff676d4a88c6d37276dfa4160c21ed5f@127.0.0.1:30303"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_addPeer",
+  "params": [
+    "enode://c93f69ddd83d3db3e93e5165d60b4f5d93a9731df776beee94c5f8a0c770e41bdea69094136402db0cef7af63f0aa636ff676d4a88c6d37276dfa4160c21ed5f@127.0.0.1:30303"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_changeLogLevel",
+#    "params": [
+#        "DEBUG"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_changeLogLevel",
+  "params": [
+    "WARN"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_generateLogBloomCache",
+#    "params": [
+#        "0x0",
+#        "0x10000"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_generateLogBloomCache",
+  "params": [
+    "0x0",
+    "0x10000"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_logsRepairCache",
+#    "params": [
+#        "1200"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_logsRepairCache",
+  "params": [
+    "1200"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_nodeInfo",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_nodeInfo",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_peers",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_peers",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "admin_removePeer",
+#    "params": [
+#        "enode://f59c0ab603377b6ec88b89d5bb41b98fc385030ab1e4b03752db6f7dab364559d92c757c13116ae6408d2d33f0138e7812eb8b696b2a22fe3332c4b5127b22a3@127.0.0.1:30304"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "admin_removePeer",
+  "params": [
+    "enode://f59c0ab603377b6ec88b89d5bb41b98fc385030ab1e4b03752db6f7dab364559d92c757c13116ae6408d2d33f0138e7812eb8b696b2a22fe3332c4b5127b22a3@127.0.0.1:30304"
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+

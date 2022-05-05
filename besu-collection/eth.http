@@ -1,0 +1,1033 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_accounts",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_accounts",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_blockNumber",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_blockNumber",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_call",
+#    "params": [
+#        {
+#            "to": "0x69498dd54bd25aa0c886cf1f8b8ae0856d55ff13",
+#            "value": "0x1"
+#        },
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_call",
+  "params": [
+    {
+      "to": "0x69498dd54bd25aa0c886cf1f8b8ae0856d55ff13",
+      "value": "0x1"
+    },
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_chainId",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_chainId",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_coinbase",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_coinbase",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_estimateGas",
+#    "params": [
+#        {
+#            "from": "0x687422eea2cb73b5d3e242ba5456b782919afc85",
+#            "to": "0xdd37f65db31c107f773e82a4f85c693058fef7a9",
+#            "value": "0x1"
+#        },
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_estimateGas",
+  "params": [
+    {
+      "from": "0x687422eea2cb73b5d3e242ba5456b782919afc85",
+      "to": "0xdd37f65db31c107f773e82a4f85c693058fef7a9",
+      "value": "0x1"
+    },
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_gasPrice",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_gasPrice",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getBalance",
+#    "params": [
+#        "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBalance",
+  "params": [
+    "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getBlockByHash",
+#    "params": [
+#        "0xaf5526fcb88b2f0d163c9a78ee678bf95b20115dc3d4e2b7b1f5fc4a308724a0",
+#        false
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockByHash",
+  "params": [
+    "0xaf5526fcb88b2f0d163c9a78ee678bf95b20115dc3d4e2b7b1f5fc4a308724a0",
+    false
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getBlockByNumber",
+#    "params": [
+#        "0xF",
+#        true
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockByNumber",
+  "params": [
+    "0xF",
+    true
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getBlockTransactionCountByHash",
+#    "params": [
+#        "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockTransactionCountByHash",
+  "params": [
+    "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getBlockTransactionCountByNumber",
+#    "params": [
+#        "0xe8"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getBlockTransactionCountByNumber",
+  "params": [
+    "0xe8"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getCode",
+#    "params": [
+#        "0xa50a51c09a5c451c52bb714527e1974b686d8e77",
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getCode",
+  "params": [
+    "0xa50a51c09a5c451c52bb714527e1974b686d8e77",
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getFilterChanges",
+#    "params": [
+#        "0xf8bf5598d9e04fbe84523d42640b9b0e"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getFilterChanges",
+  "params": [
+    "0xf8bf5598d9e04fbe84523d42640b9b0e"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getLogs",
+#    "params": [
+#        {
+#            "fromBlock": "earliest",
+#            "toBlock": "latest",
+#            "address": "0x2e1f232a9439c3d459fceca0beef13acc8259dd8",
+#            "topics": []
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getLogs",
+  "params": [
+    {
+      "fromBlock": "earliest",
+      "toBlock": "latest",
+      "address": "0x2e1f232a9439c3d459fceca0beef13acc8259dd8",
+      "topics": []
+    }
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getMinerDataByBlockHash",
+#    "params": [
+#        "0xbf137c3a7a1ebdfac21252765e5d7f40d115c2757e4a4abee929be88c624fdb7"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getMinerDataByBlockHash",
+  "params": [
+    "0xbf137c3a7a1ebdfac21252765e5d7f40d115c2757e4a4abee929be88c624fdb7"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getMinerDataByBlockNumber",
+#    "params": [
+#        "0x7689D2"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getMinerDataByBlockNumber",
+  "params": [
+    "0x7689D2"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getProof",
+#    "params": [
+#        "0a8156e7ee392d885d10eaa86afd0e323afdcd95",
+#        [
+#            "0x0000000000000000000000000000000000000000000000000000000000000347"
+#        ],
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getProof",
+  "params": [
+    "0a8156e7ee392d885d10eaa86afd0e323afdcd95",
+    [
+      "0x0000000000000000000000000000000000000000000000000000000000000347"
+    ],
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getStorageAt",
+#    "params": [
+#        "0x3B3F3E",
+#        "0x0",
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getStorageAt",
+  "params": [
+    "0x3B3F3E",
+    "0x0",
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getTransactionByBlockHashAndIndex",
+#    "params": [
+#        "0xa52be92809541220ee0aaaede6047d9a6c5d0cd96a517c854d944ee70a0ebb44",
+#        "0x1"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionByBlockHashAndIndex",
+  "params": [
+    "0xa52be92809541220ee0aaaede6047d9a6c5d0cd96a517c854d944ee70a0ebb44",
+    "0x1"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getTransactionByBlockNumberAndIndex",
+#    "params": [
+#        "latest",
+#        "0x0"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionByBlockNumberAndIndex",
+  "params": [
+    "latest",
+    "0x0"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getTransactionByHash",
+#    "params": [
+#        "0xa52be92809541220ee0aaaede6047d9a6c5d0cd96a517c854d944ee70a0ebb44"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionByHash",
+  "params": [
+    "0xa52be92809541220ee0aaaede6047d9a6c5d0cd96a517c854d944ee70a0ebb44"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getTransactionCount",
+#    "params": [
+#        "0x9d8f8572f345e1ae53db1dFA4a7fce49B467bD7f",
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionCount",
+  "params": [
+    "0x9d8f8572f345e1ae53db1dFA4a7fce49B467bD7f",
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getTransactionReceipt",
+#    "params": [
+#        "0x96c6830efd87a70020d4d1647c93402d747c05ecf6beeb068dee621f8d13d8d1"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getTransactionReceipt",
+  "params": [
+    "0x96c6830efd87a70020d4d1647c93402d747c05ecf6beeb068dee621f8d13d8d1"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getUncleByBlockHashAndIndex",
+#    "params": [
+#        "0xc48fb64230a82f65a08e7280bd8745e7fea87bc7c206309dee32209fe9a985f7",
+#        "0x0"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getUncleByBlockHashAndIndex",
+  "params": [
+    "0xc48fb64230a82f65a08e7280bd8745e7fea87bc7c206309dee32209fe9a985f7",
+    "0x0"
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getUncleByBlockNumberAndIndex",
+#    "params": [
+#        "0x7689D2",
+#        "0x0"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getUncleByBlockNumberAndIndex",
+  "params": [
+    "0x7689D2",
+    "0x0"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getUncleCountByBlockHash",
+#    "params": [
+#        "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getUncleCountByBlockHash",
+  "params": [
+    "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getUncleCountByBlockNumber",
+#    "params": [
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getUncleCountByBlockNumber",
+  "params": [
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_getWork",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_getWork",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_hashrate",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_hashrate",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_mining",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_mining",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_newBlockFilter",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_newBlockFilter",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_newFilter",
+#    "params": [
+#        {
+#            "fromBlock": "earliest",
+#            "toBlock": "latest",
+#            "topics": []
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_newFilter",
+  "params": [
+    {
+      "fromBlock": "earliest",
+      "toBlock": "latest",
+      "topics": []
+    }
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_newPendingTransactionFilter",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_newPendingTransactionFilter",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_protocolVersion",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_protocolVersion",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_sendRawTransaction",
+#    "params": [
+#        "0xf86a018203e882520894f17f52151ebef6c7334fad080c5704d77216b732896c6b935b8bbd400000801ba093129415f03b4794fd1512e79ee7f097e4271f66721020f8407aac92179893a5a0451b875d89721ec98be55201092980b0a87bb1c48507fccb86da713596b2a09e"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_sendRawTransaction",
+  "params": [
+    "0xf86a018203e882520894f17f52151ebef6c7334fad080c5704d77216b732896c6b935b8bbd400000801ba093129415f03b4794fd1512e79ee7f097e4271f66721020f8407aac92179893a5a0451b875d89721ec98be55201092980b0a87bb1c48507fccb86da713596b2a09e"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_submitHashrate",
+#    "params": [
+#        "0x0000000000000000000000000000000000000000000000000000000000500000",
+#        "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_submitHashrate",
+  "params": [
+    "0x0000000000000000000000000000000000000000000000000000000000500000",
+    "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_submitWork",
+#    "params": [
+#        "0x0000000000000001",
+#        "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+#        "0xD1GE5700000000000000000000000000D1GE5700000000000000000000000000"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_submitWork",
+  "params": [
+    "0x0000000000000001",
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xD1GE5700000000000000000000000000D1GE5700000000000000000000000000"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_syncing",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_syncing",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "eth_uninstallFilter",
+#    "params": [
+#        "0x70355a0b574b437eaa19fe95adfedc0a"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "eth_uninstallFilter",
+  "params": [
+    "0x70355a0b574b437eaa19fe95adfedc0a"
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

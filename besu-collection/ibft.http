@@ -1,0 +1,153 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_discardValidatorVote",
+#    "params": [
+#        "0x42eb768f2244c8811c63729a21a3569731535f06"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_discardValidatorVote",
+  "params": [
+    "0x42eb768f2244c8811c63729a21a3569731535f06"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_getPendingVotes",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_getPendingVotes",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_getSignerMetrics",
+#    "params": [
+#        "1",
+#        "100"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_getSignerMetrics",
+  "params": [
+    "1",
+    "100"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_getValidatorsByBlockHash",
+#    "params": [
+#        "0x98b2ddb5106b03649d2d337d42154702796438b3c74fd25a5782940e84237a48"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_getValidatorsByBlockHash",
+  "params": [
+    "0x98b2ddb5106b03649d2d337d42154702796438b3c74fd25a5782940e84237a48"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_getValidatorsByBlockNumber",
+#    "params": [
+#        "0x09"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_getValidatorsByBlockNumber",
+  "params": [
+    "0x09"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "ibft_proposeValidatorVote",
+#    "params": [
+#        "42d4287eac8078828cf5f3486cfe601a275a49a5",
+#        true
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "ibft_proposeValidatorVote",
+  "params": [
+    "42d4287eac8078828cf5f3486cfe601a275a49a5",
+    true
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+
+
+
+

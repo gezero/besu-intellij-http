@@ -1,0 +1,487 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_call",
+#    "params": [
+#        "tb8NVyQqZnHNegf/3mYsyB+HEud4SPWn90rz3GoskRw=",
+#        {
+#            "to": "0x69498dd54bd25aa0c886cf1f8b8ae0856d55ff13",
+#            "data": "0x3fa4f245"
+#        },
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_call",
+  "params": [
+    "tb8NVyQqZnHNegf/3mYsyB+HEud4SPWn90rz3GoskRw=",
+    {
+      "to": "0x69498dd54bd25aa0c886cf1f8b8ae0856d55ff13",
+      "data": "0x3fa4f245"
+    },
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_createPrivacyGroup",
+#    "params": [
+#        {
+#            "addresses": [
+#                "sTZpbQhcOfd9ZaFDnC00e/N2Ofv9p4/ZTBbEeVtXJ3E=",
+#                "quhb1pQPGN1w8ZSZSyiIfncEAlVY/M/rauSyQ5wVMRE="
+#            ],
+#            "name": "Group A",
+#            "description": "Description Group A"
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_createPrivacyGroup",
+  "params": [
+    {
+      "addresses": [
+        "sTZpbQhcOfd9ZaFDnC00e/N2Ofv9p4/ZTBbEeVtXJ3E=",
+        "quhb1pQPGN1w8ZSZSyiIfncEAlVY/M/rauSyQ5wVMRE="
+      ],
+      "name": "Group A",
+      "description": "Description Group A"
+    }
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_deletePrivacyGroup",
+#    "params": [
+#        "ewuTVoc5nlvWMwTFdRRK/wvV0dcyQo/Pauvx5bNEbTk="
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_deletePrivacyGroup",
+  "params": [
+    "ewuTVoc5nlvWMwTFdRRK/wvV0dcyQo/Pauvx5bNEbTk="
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_distributeRawTransaction",
+#    "params": [
+#        "0xf869018203e882520894f17f52151ebef6c7334fad080c5704d77216b732881bc16d674ec80000801ba02da1c48b670996dcb1f447ef9ef00b33033c48a4fe938f420bec3e56bfd24071a062e0aa78a81bf0290afbc3a9d8e9a068e6d74caa66c5e0fa8a46deaae96b0833"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_distributeRawTransaction",
+  "params": [
+    "0xf869018203e882520894f17f52151ebef6c7334fad080c5704d77216b732881bc16d674ec80000801ba02da1c48b670996dcb1f447ef9ef00b33033c48a4fe938f420bec3e56bfd24071a062e0aa78a81bf0290afbc3a9d8e9a068e6d74caa66c5e0fa8a46deaae96b0833"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_findPrivacyGroup",
+#    "params": [
+#        [
+#            "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
+#            "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw="
+#        ]
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_findPrivacyGroup",
+  "params": [
+    [
+      "negmDcN2P4ODpqn/6WkJ02zT/0w0bjhGpkZ8UP6vARk=",
+      "g59BmTeJIn7HIcnq8VQWgyh/pDbvbt2eyP0Ii60aDDw="
+    ]
+  ],
+  "id": 1
+}
+
+###
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getCode",
+#    "params": [
+#        "1lJxSIP4JOp6uRn9wYsPeWwqoOP1c4nPQjylB4FExUA=",
+#        "0xeaf1c1bd00ef0bec5e39fba81740f1c5d05aa201",
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getCode",
+  "params": [
+    "1lJxSIP4JOp6uRn9wYsPeWwqoOP1c4nPQjylB4FExUA=",
+    "0xeaf1c1bd00ef0bec5e39fba81740f1c5d05aa201",
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getEeaTransactionCount",
+#    "params": [
+#        "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+#        "GGilEkXLaQ9yhhtbpBT03Me9iYa7U/mWXxrJhnbl1XY=",
+#        [
+#            "KkOjNLmCI6r+mICrC6l+XuEDjFEzQllaMQMpWLl4y1s=",
+#            "eLb69r4K8/9WviwlfDiZ4jf97P9czyS3DkKu0QYGLjg="
+#        ]
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getEeaTransactionCount",
+  "params": [
+    "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+    "GGilEkXLaQ9yhhtbpBT03Me9iYa7U/mWXxrJhnbl1XY=",
+    [
+      "KkOjNLmCI6r+mICrC6l+XuEDjFEzQllaMQMpWLl4y1s=",
+      "eLb69r4K8/9WviwlfDiZ4jf97P9czyS3DkKu0QYGLjg="
+    ]
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getFilterChanges",
+#    "params": [
+#        "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+#        "0x4a35b92809d73f4f53a2355d62125442"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getFilterChanges",
+  "params": [
+    "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+    "0x4a35b92809d73f4f53a2355d62125442"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getFilterLogs",
+#    "params": [
+#        "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+#        "0x4a35b92809d73f4f53a2355d62125442"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getFilterLogs",
+  "params": [
+    "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+    "0x4a35b92809d73f4f53a2355d62125442"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getLogs",
+#    "params": [
+#        "vGy/TZgO6y8VPMVeJAQ99MF1NaTf5ohA3TFfzoEF71k=",
+#        {
+#            "fromBlock": "earliest",
+#            "toBlock": "latest",
+#            "addresses": [
+#                "0x630c507ff633312087dc33c513b66276abcd2fc3"
+#            ],
+#            "topics": [
+#                "0x85bea11d86cefb165374e0f727bacf21dc2f4ea816493981ecf72dcfb212a410"
+#            ]
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getLogs",
+  "params": [
+    "vGy/TZgO6y8VPMVeJAQ99MF1NaTf5ohA3TFfzoEF71k=",
+    {
+      "fromBlock": "earliest",
+      "toBlock": "latest",
+      "addresses": [
+        "0x630c507ff633312087dc33c513b66276abcd2fc3"
+      ],
+      "topics": [
+        "0x85bea11d86cefb165374e0f727bacf21dc2f4ea816493981ecf72dcfb212a410"
+      ]
+    }
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getPrivacyPrecompileAddress",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getPrivacyPrecompileAddress",
+  "params": [],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getPrivateTransaction",
+#    "params": [
+#        "0x623c4ce5275a87b91f4f1c521012d39ca19311c787bde405490f4c0426a71498"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getPrivateTransaction",
+  "params": [
+    "0x623c4ce5275a87b91f4f1c521012d39ca19311c787bde405490f4c0426a71498"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getTransactionCount",
+#    "params": [
+#        "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+#        "kAbelwaVW7okoEn1+okO+AbA4Hhz/7DaCOWVQz9nx5M="
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getTransactionCount",
+  "params": [
+    "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+    "kAbelwaVW7okoEn1+okO+AbA4Hhz/7DaCOWVQz9nx5M="
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_getTransactionReceipt",
+#    "params": [
+#        "0xf3ab9693ad92e277bf785e1772f29fb1864904bbbe87b0470455ddb082caab9d"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_getTransactionReceipt",
+  "params": [
+    "0xf3ab9693ad92e277bf785e1772f29fb1864904bbbe87b0470455ddb082caab9d"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_newFilter",
+#    "params": [
+#        "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+#        {
+#            "fromBlock": "earliest",
+#            "toBlock": "latest",
+#            "addresses": [
+#                "0x991cc548c154b2953cc48c02f782e1314097dfbb"
+#            ],
+#            "topics": [
+#                "0x85bea11d86cefb165374e0f727bacf21dc2f4ea816493981ecf72dcfb212a410"
+#            ]
+#        }
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_newFilter",
+  "params": [
+    "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+    {
+      "fromBlock": "earliest",
+      "toBlock": "latest",
+      "addresses": [
+        "0x991cc548c154b2953cc48c02f782e1314097dfbb"
+      ],
+      "topics": [
+        "0x85bea11d86cefb165374e0f727bacf21dc2f4ea816493981ecf72dcfb212a410"
+      ]
+    }
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "priv_uninstallFilter",
+#    "params": [
+#        "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+#        "0x4a35b92809d73f4f53a2355d62125442"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "priv_uninstallFilter",
+  "params": [
+    "4rFldHM792LeP/e2WPkTXZedjwKuTr/KwCFTt6mBbkI=",
+    "0x4a35b92809d73f4f53a2355d62125442"
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

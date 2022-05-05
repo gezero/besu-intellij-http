@@ -1,0 +1,155 @@
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_discard",
+#    "params": [
+#        "0x42eb768f2244c8811c63729a21a3569731535f06"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_discard",
+  "params": [
+    "0x42eb768f2244c8811c63729a21a3569731535f06"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_getSignerMetrics",
+#    "params": [
+#        "1",
+#        "100"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_getSignerMetrics",
+  "params": [
+    "1",
+    "100"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_getSigners",
+#    "params": [
+#        "latest"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_getSigners",
+  "params": [
+    "latest"
+  ],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_getSignersAtHash",
+#    "params": [
+#        "0x98b2ddb5106b03649d2d337d42154702796438b3c74fd25a5782940e84237a48"
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_getSignersAtHash",
+  "params": [
+    "0x98b2ddb5106b03649d2d337d42154702796438b3c74fd25a5782940e84237a48"
+  ],
+  "id": 1
+}
+
+###
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_proposals",
+#    "params": [],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_proposals",
+  "params": [],
+  "id": 1
+}
+
+###
+
+
+# curl --location --request POST 'http://localhost:8545'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "jsonrpc": "2.0",
+#    "method": "clique_propose",
+#    "params": [
+#        "0x12eb759f2222d7711c63729a45c3585731521d01",
+#        true
+#    ],
+#    "id": 1
+#}'
+POST {{url}}
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "clique_propose",
+  "params": [
+    "0x12eb759f2222d7711c63729a45c3585731521d01",
+    true
+  ],
+  "id": 1
+}
+
+###
+
+
+
+
+
+
+
+
+
